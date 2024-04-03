@@ -27,11 +27,22 @@ h1 {
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    margin: 0px; /* Adiciona uma pequena margem inferior para separar o h1 do h3 */
 }
 
 h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
+}
+
+.botao {
+    background-color: white; /* Define a cor de fundo como branco */
+    color: black; /* Define a cor do texto como preto */
+    padding: 5px 15px; /* Adiciona espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    text-transform: uppercase; /* Transforma o texto em maiúsculo */
+    margin-right: 5px; /* Adiciona uma margem à direita para separar do próximo elemento */
 }
 
 .social-media {
@@ -190,9 +201,13 @@ a:hover {
     width: 90%;
 }
 
+.card-container a {
+    text-decoration: none;
+}
+
 .card {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 100%;
     margin: 3rem 0 3rem 0 ;
     display: flex;
@@ -258,8 +273,8 @@ a:hover {
 }
 
 .card:hover > .card-wrapper::before {
-    height: 260px;
-    width: 260px;
+    height: 350px;
+    width: 350px;
     opacity: 1;
 }
 
@@ -278,4 +293,31 @@ a:hover {
     justify-content: center;
     color: black;
     font-size: bold;
+    margin-top: 50px; /* Adicionando margem superior igual à altura do footer */
 }
+
+.about-me-container {
+    width: 100%;
+    background-color: rgba(3, 107, 226, 0.863);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 50px 0; /* Ajusta o espaçamento interno */
+}
+
+.about-me-card {
+    margin-bottom: 20px; /* Adiciona uma margem inferior */
+}
+
+.about-me-text {
+    text-align: center; /* Centraliza o texto */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove as margens padrão */
+}
+
+.about-me-text li {
+    margin-bottom: 20px; /* Adiciona uma margem inferior */
+}
+
